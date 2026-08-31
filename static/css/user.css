@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    background: url('/static/images/login.jpg') no-repeat center center / cover fixed;
+    min-height: 100vh;
+}
+.user{
+    display:flex;
+    min-height: 100vh;
+    background: rgba(204, 213, 174, 0.55);
+}
+.sidebar{
+    width:240px;
+    min-height:100vh;
+    padding:35px 30px;
+    background:rgba(255,255,255,0.25);
+}
+.sidebar nav{
+    display:flex;
+    flex-direction: column;
+    gap:18px;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    min-height: 300px;
+    padding:50px 10px;
+}
+.sidebar nav a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:black;
+    padding:10px 12px;
+    border-radius:8px;
+    background: rgba(255,255,255,0.08);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+.sidebar nav a:hover{
+    background: rgba(255,255,255,0.18);
+    transform: translateX(4px);
+}
+.main-content{
+    flex:1;
+    padding:20px;
+}
+.head{
+    padding:20px;
+}
+.intro{
+    display:flex;
+    padding:20px;
+}
+.profile{
+    display:flex;
+    flex-direction: column;
+}
+.profile .profile-info{
+    padding:10px 20px;
+}
