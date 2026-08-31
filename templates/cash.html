@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/cash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Esteban&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cash">
+        <aside class="sidebar">
+            <h2>Finance Tracker</h2>
+            <nav>
+                <a href="dashboard.html">Dash</a>
+                <a href="cash.html">Cash</a>
+                <a href="bank.html">Bank</a>
+                <a href="user.html">User</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="head">
+                <h1>Cash Transactions</h1>
+            </header>
+            <section class="filter">
+                <div class="filtering">
+                    <label for="category">Category :</label>
+                <select name="select" id="category">
+                    <option value="all">All</option>
+                    <option value="food">Food</option>
+                    <option value="travel">Travel</option>
+                    <option value="gas">Gas</option>
+                    <option value="laundry">Laundry</option>
+                    <option value="salary">Salary</option>
+                    <option value="office">Office</option>
+                    <option value="waste">Waste</option>
+                    <option value="fuel">Fuel</option>
+                    <option value="misc">Miscellaneous</option>
+                </select>
+                </div>
+                <div class="filtering">
+                    <label for="recurrence">Recurrence:</label>
+                <select name="select" id="category">
+                    <option value="all">All</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                    <option value="one-time">One-time</option>
+                </select>
+                </div>
+            </section>
+            <section class="add-button">
+                <button class="add-transaction">+ Add Transaction</button>
+            </section>
+            <section class="transactions">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Amount</th>
+                            <th>Title</th>
+                            <th>Expense Type</th>
+                            <th>Category</th>
+                            <th>Note</th>
+                            <th>Recurrence</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>₹500</td>
+                            <td>Groceries</td>
+                            <td>Home</td>
+                            <td>Food</td>
+                            <td>Weekly groceries</td>
+                            <td>Daily</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>₹3000</td>
+                            <td>Electricity</td>
+                            <td>Home</td>
+                            <td>Electricity</td>
+                            <td>bill</td>
+                            <td>Monthly</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
